@@ -1,0 +1,125 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url("fonts/HennyPenny-Regular.ttf");
+  }
+  
+  body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    header {
+      background-color: #232d36;
+      line-height: 2.5em;
+      text-align: left;
+      padding: 0 1.2em
+    }
+  
+    .header {
+      float: left;
+      display: block;
+    }
+  
+    .pageName {
+      font-size: 16px;
+      text-decoration: none;
+      color: #f2f2f2;
+      position: relative;
+    }
+  
+    .logo {
+      font-size: 1.5em;
+      font-weight: lighter;
+      font-style: italic;
+      font-family: myFirstFont;
+      color: #f2f2f2;
+      text-decoration: none;
+      position: relative;
+      left: 50.5em;
+    }
+    
+    nav {
+      overflow: hidden;
+      background-color: #3071c7;
+    }
+    
+    nav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      font-size: 1.8em;
+      text-align: center;
+      padding: 0.5em 5.185em;
+      text-decoration: none;
+    }
+    
+    nav a:hover {
+      background-color: #ddd;
+      color: #000000;
+    }
+ 
+    main {
+      display: inline-block; /* a befogadó elem mérete igazodjék a benne lévő elemek méretéhez */
+    }
+  
+    .intro-container {
+      text-align: center;
+      display: inline-block;
+      position: relative;
+  
+      /* ezt csak azért kell beletenni, hogy ne hagyjon alatta fehér csíkot: */
+      background-image: url("images/portfairy.jpg");
+      background-size: cover;
+    }
+    
+    .intro {
+      background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+      position: absolute;
+      top: 30%;
+      font-size: 2em;
+      color: #ffffff;
+    }
+  
+    footer {
+      background-color: #462e2e;
+      padding: 10px;
+    }
+  
+    .menu-button {
+      background-color: #462e2e;
+      border: none;
+      font-size: x-large;
+      cursor: pointer;
+    }
+  
+    .menu-button a {
+      color: #f2f2f2;
+      text-decoration: none;
+    }
+  
+    .menu-button a:hover {
+      background-color: #ddd;
+      color: #000000;
+    }
+  
+    /* Tablet view. */
+  @media screen and (min-width: 768px) {
+    .projects .work {
+        width: 75%;
+    }
+  
+    .gallery-container .img {
+        width: 58%;
+    }
+  }
+  
+  /* PC view. */
+  @media screen and (min-width: 968px) {
+    .projects .work {
+        width: 40%;
+    }
+  
+    .gallery-container .img {
+        width: 30%;
+    }
+  }  
