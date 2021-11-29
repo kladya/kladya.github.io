@@ -59,7 +59,7 @@
     }
  
     main {
-      display: inline-block; /* a befogadó elem mérete igazodjék a benne lévő elemek méretéhez */
+      display: flex; /* a befogadó elem mérete igazodjék a benne lévő elemek méretéhez */
     }
   
     .intro-container {
