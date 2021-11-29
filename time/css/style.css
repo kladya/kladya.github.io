@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Cyberverse';
+    src: url('../fonts/Cyberverse.otf');
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.display {
+    font-family: 'Cyberverse';
+    font-size: 10rem;
+    color: #00FFFF; 
+}
+
+@media screen and (max-width: 768px) {
+    .display {   
+      font-size: 5rem; 
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .display {   
+      font-size: 3rem; 
+    }
+}

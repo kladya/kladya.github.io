@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+html { 
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 1 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(223, 193, 198);
+}
+
+.pair-game-container {
+    width: 35rem;
+    background-color: rgb(223, 193, 198);
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 1 auto;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0 1.5rem .5rem;
+}
+
+h1 {
+    color: rgb(151, 148, 148);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: rgb(65, 193, 225);
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    color: rgb(65, 193, 225);
+    text-align: center;
+}
+
+.card-desk {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 0 100%;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1 0 15%;
+    margin: .5rem;
+    text-align: center;
+    perspective: 10rem; 
+    cursor: pointer;
+}
+
+.card__inner {
+    height: 6.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card__inner.is-flipped {
+    transform: rotateY(-180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: .3rem;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    box-shadow: 2px 2px 2px #555;
+    user-select: none;
+    background-color: rgb(151, 148, 148);
+}
+
+.card__face--back {
+    background-image: url('img/bg-img.jpg');
+    background-size: cover;
+}
+
+.card__face--front{
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    transform: rotateY(180deg);
+}
+
+.card__face--front-1, .card__face--front-2, .card__face--front-3, .card__face--front-4, .card__face--front-5 {
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+
+.card__face--front-1 {    
+    background-image: url('img/mug1.png');
+}
+
+.card__face--front-2 {    
+    background-image: url('img/mug2.png');
+}
+
+.card__face--front-3 {    
+    background-image: url('img/mug3.png');
+}
+
+.card__face--front-4 {    
+    background-image: url('img/mug4.png');
+}
+
+.card__face--front-5 {    
+    background-image: url('img/mug5.png');
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        margin: .3rem;
+    }
+
+    .card__inner {
+        width: 2.79rem;
+        height: 3.5rem;
+    }
+}
