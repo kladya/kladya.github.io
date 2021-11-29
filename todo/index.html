@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Daily To-Do list manager</h1>
+        <div class="todo">
+            <div class="todo__header">
+                <div class="date-container">
+                    <p class="weekday"></p>
+                    <p class="date"></p>
+                </div>
+                <form class="input-box">
+                    <input class="input" type="text" placeholder="Take the garbage out">
+                    <button class="add" type="submit">+</button>
+                </form>
+            </div>
+            <p>You have <span class="pending-count"></span> pending items</p>
+            <div class="chill"></div>
+            <div class="pending-todos-box"></div>
+            <div class="completed-todos-box hide"></div>
+            <div class="todo__footer">
+                <span class="hide-completed">Show Complete</span>
+                <span class="clear">Clear All</span>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
