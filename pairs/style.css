@@ -141,3 +141,22 @@ p {
         height: 3.5rem;
     }
 }
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h3, p {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        margin: .1rem;
+    }
+
+    .card__inner {
+        width: 2.635rem;
+        height: 3rem;
+    }
+}
